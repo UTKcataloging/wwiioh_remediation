@@ -4,35 +4,44 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
-   <identifier type="pid">0012_003467_000304_01</identifier>
+   <identifier type="local">wwiioh_2570</identifier>
    <titleInfo>
-      <title>Eddlemon, George A.: WWII Oral History - Part 1</title>
+      <title>Archilla, Eliel: WWII Oral History  - Part 2</title>
    </titleInfo>
-   <abstract>Interview with George A. Eddlemon on May 2, 1990</abstract>
+   <abstract>Interview with Eliel Archilla on Dec 31, 1994</abstract>
    <name>
-      <namePart>Eddlemon, George A.</namePart>
+      <namePart>Archilla, Eliel</namePart>
       <role>
          <roleTerm authority="marcrelator"
-                   valueURI="http://id.loc.gov/vocabulary/relators/cre">creator</roleTerm>
+                   valueURI="http://id.loc.gov/vocabulary/relators/cre">Creator</roleTerm>
       </role>
    </name>
    <originInfo>
-      <dateCreated>May 2, 1990</dateCreated>
-      <dateCreated encoding="edtf">1990-05-02</dateCreated>
+      <dateCreated>Dec 31, 1994</dateCreated>
+      <dateCreated encoding="edtf">1994-12-31</dateCreated>
    </originInfo>
    <language>
       <languageTerm authority="iso639-2b" type="text">English</languageTerm>
    </language>
    <physicalDescription>
-      <form authority="aat" valueURI="http://vocab.getty.edu/page/aat/300026392"/>
+      <form authority="aat" valueURI="http://vocab.getty.edu/page/aat/300026392">interviews</form>
+      <internetMediaType>audio/wav</internetMediaType>
    </physicalDescription>
+   <subject valueURI="http://id.loc.gov/authorities/names/n79126811"
+            authority="naf">
+      <name>
+         <namePart>United States. Air Force</namePart>
+      </name>
+   </subject>
+   <subject valueURI="http://id.loc.gov/authorities/names/no2015133624"
+            authority="naf">
+      <name>
+         <namePart>Center for the Study of War and Society</namePart>
+      </name>
+   </subject>
    <subject authority="lcsh"
             valueURI="http://id.loc.gov/authorities/subjects/sh85096445">
       <geographic>Pacific Area</geographic>
-   </subject>
-   <subject authority="lcsh"
-            valueURI="http://id.loc.gov/authorities/names/n79063202">
-      <topic>United States. Army</topic>
    </subject>
    <subject authority="lcsh"
             valueURI="http://id.loc.gov/authorities/subjects/sh85095238">
@@ -52,4 +61,9 @@
          <title>The University of Tennessee Libraries, Special Collections, Knoxville</title>
       </titleInfo>
    </relatedItem>
+   <accessCondition type="use and reproduction"
+                    xlink:href="http://rightsstatements.org/vocab/InC/1.0/">In Copyright</accessCondition>
+   <recordInfo>
+      <recordContentSource valueURI="http://id.loc.gov/authorities/names/n87808088">University of Tennessee, Knoxville. Libraries</recordContentSource>
+   </recordInfo>
 </mods>

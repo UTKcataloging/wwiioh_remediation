@@ -12,7 +12,7 @@
 ```
 <mods>
 
-<identifier type="pid">{{cells["identifier"].value}}</identifier>
+<identifier type="local">{{cells["headeridentifier"].value}}</identifier>
 
 <titleInfo><title>{{cells["title"].value}}</title></titleInfo>
 
@@ -28,7 +28,11 @@
 
 <language><languageTerm authority="iso639-2b" type="text">English</languageTerm></language>
 
-<physicalDescription><form authority="aat" valueURI="{{cells['form_URI'].value}}"></form></physicalDescription>
+<physicalDescription><form authority="aat" valueURI="{{cells['form_URI'].value}}">{{cells['form'].value}}</form><internetMediaType>{{cells['internetMediaType'].value}}</internetMediaType></physicalDescription>
+
+{{if(isBlank(cells['subject.0name'].value), '', '<subject'+ if(isBlank(cells['subject.0name_URI'].value), '', ' valueURI="' + cells['subject.0name_URI'].value + '"' + ' authority="naf"') + '><name><namePart>' + cells['subject.0name'].value + '</namePart></name></subject>')}}
+
+{{if(isBlank(cells['subject.1name'].value), '', '<subject'+ if(isBlank(cells['subject.1name_URI'].value), '', ' valueURI="' + cells['subject.1name_URI'].value + '"' + ' authority="naf"') + '><name><namePart>' + cells['subject.1name'].value + '</namePart></name></subject>')}}
 
 {{if(isBlank(cells['subject.0geographic'].value), '', '<subject' + if(isBlank(cells['subject.0geographic_URI'].value), '>', ' authority="lcsh" valueURI="' + cells['subject.0geographic_URI'].value + '">') + '<geographic>' + cells['subject.0geographic'].value + '</geographic></subject>')}}
 
@@ -46,13 +50,13 @@
 
 {{if(isBlank(cells['subject.3topic'].value), '', '<subject' + if(isBlank(cells['subject.3topic_URI'].value), '>', ' authority="lcsh" valueURI="' + cells['subject.3topic_URI'].value + '">') + '<topic>' + cells['subject.3topic'].value + '</topic></subject>')}}
 
-{{if(isBlank(cells['subject.4topic'].value), '', '<subject' + if(isBlank(cells['subject.4topic_URI'].value), '>', ' authority="lcsh" valueURI="' + cells['subject.4topic_URI'].value + '">') + '<topic>' + cells['subject.4topic'].value + '</topic></subject>')}}
-
 <typeOfResource>{{cells['typeOfResource'].value}}</typeOfResource>
 
 <relatedItem displayLabel="Project" type="host"><titleInfo><title>{{cells['relatedItem'].value}}</title></titleInfo></relatedItem>
 
 <accessCondition type="use and reproduction" xlink:href="{{cells['Copyright_URI'].value}}">{{cells['Copyright'].value}}</accessCondition> 
+
+<recordInfo><recordContentSource valueURI="http://id.loc.gov/authorities/names/n87808088">University of Tennessee, Knoxville. Libraries</recordContentSource></recordInfo>
 
 </mods>
 ```

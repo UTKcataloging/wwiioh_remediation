@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
+   <identifier type="local">wwiioh_2201</identifier>
+   <titleInfo>
+      <title>Forinash, Cecil L.: WWII Oral History  - Part 2</title>
+   </titleInfo>
+   <abstract>Interview with Cecil L. Forinash on Aug 14, 1991</abstract>
+   <name>
+      <namePart>Forinash, Cecil L.</namePart>
+      <role>
+         <roleTerm authority="marcrelator"
+                   valueURI="http://id.loc.gov/vocabulary/relators/cre">Creator</roleTerm>
+      </role>
+   </name>
+   <originInfo>
+      <dateCreated>Aug 14, 1991</dateCreated>
+      <dateCreated encoding="edtf">1991-08-14</dateCreated>
+   </originInfo>
+   <language>
+      <languageTerm authority="iso639-2b" type="text">English</languageTerm>
+   </language>
+   <physicalDescription>
+      <form authority="aat" valueURI="http://vocab.getty.edu/page/aat/300026392">interviews</form>
+      <internetMediaType>audio/wav</internetMediaType>
+   </physicalDescription>
+   <subject valueURI="http://id.loc.gov/authorities/names/n79063202"
+            authority="naf">
+      <name>
+         <namePart>United States. Army</namePart>
+      </name>
+   </subject>
+   <subject valueURI="http://id.loc.gov/authorities/names/no2015133624"
+            authority="naf">
+      <name>
+         <namePart>Center for the Study of War and Society</namePart>
+      </name>
+   </subject>
+   <subject authority="lcsh"
+            valueURI="http://id.loc.gov/authorities/subjects/sh85095238">
+      <topic>Oral history</topic>
+   </subject>
+   <subject authority="lcsh"
+            valueURI="http://id.loc.gov/authorities/subjects/sh2010119828">
+      <topic>World War, 1939-1945--Veterans--United States--Biography</topic>
+   </subject>
+   <subject authority="lcsh"
+            valueURI="http://id.loc.gov/authorities/names/no2015133624">
+      <topic>Center for the Study of War and Society</topic>
+   </subject>
+   <typeOfResource>sound recording-nonmusical</typeOfResource>
+   <relatedItem displayLabel="Project" type="host">
+      <titleInfo>
+         <title>The University of Tennessee Libraries, Special Collections, Knoxville</title>
+      </titleInfo>
+   </relatedItem>
+   <accessCondition type="use and reproduction"
+                    xlink:href="http://rightsstatements.org/vocab/InC/1.0/">In Copyright</accessCondition>
+   <recordInfo>
+      <recordContentSource valueURI="http://id.loc.gov/authorities/names/n87808088">University of Tennessee, Knoxville. Libraries</recordContentSource>
+   </recordInfo>
+</mods>
