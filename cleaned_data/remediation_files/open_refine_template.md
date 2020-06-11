@@ -12,6 +12,7 @@
 ```
 <mods>
 
+<identifier type="pid">{{cells["PID"].value}}</identifier>
 <identifier type="local">{{cells["headeridentifier"].value}}</identifier>
 
 <titleInfo><title>{{cells["title"].value}}</title></titleInfo>
@@ -30,9 +31,13 @@
 
 <physicalDescription><form authority="aat" valueURI="{{cells['form_URI'].value}}">{{cells['form'].value}}</form><internetMediaType>{{cells['internetMediaType'].value}}</internetMediaType></physicalDescription>
 
+{{if(isBlank(cells['DPN_note'].value), '', '<note displayLabel="dpn">' + cells['DPN_note'].value + '</note>')}}
+
 {{if(isBlank(cells['subject.0name'].value), '', '<subject'+ if(isBlank(cells['subject.0name_URI'].value), '', ' valueURI="' + cells['subject.0name_URI'].value + '"' + ' authority="naf"') + '><name><namePart>' + cells['subject.0name'].value + '</namePart></name></subject>')}}
 
 {{if(isBlank(cells['subject.1name'].value), '', '<subject'+ if(isBlank(cells['subject.1name_URI'].value), '', ' valueURI="' + cells['subject.1name_URI'].value + '"' + ' authority="naf"') + '><name><namePart>' + cells['subject.1name'].value + '</namePart></name></subject>')}}
+
+{{if(isBlank(cells['subject.2name'].value), '', '<subject'+ if(isBlank(cells['subject.2name_URI'].value), '', ' valueURI="' + cells['subject.2name_URI'].value + '"' + ' authority="naf"') + '><name><namePart>' + cells['subject.2name'].value + '</namePart></name></subject>')}}
 
 {{if(isBlank(cells['subject.0geographic'].value), '', '<subject' + if(isBlank(cells['subject.0geographic_URI'].value), '>', ' authority="lcsh" valueURI="' + cells['subject.0geographic_URI'].value + '">') + '<geographic>' + cells['subject.0geographic'].value + '</geographic></subject>')}}
 
@@ -53,6 +58,8 @@
 <typeOfResource>{{cells['typeOfResource'].value}}</typeOfResource>
 
 <relatedItem displayLabel="Project" type="host"><titleInfo><title>{{cells['relatedItem'].value}}</title></titleInfo></relatedItem>
+
+{{if(isBlank(cells['findingAid'].value), '', '<relatedItem displayLabel="Collection" type="host"><titleInfo><title>' + cells['findingAid'].value + '</title></titleInfo><identifier>' + cells['MS_identifier'].value + '</identifier></relatedItem>')}}
 
 <accessCondition type="use and reproduction" xlink:href="{{cells['Copyright_URI'].value}}">{{cells['Copyright'].value}}</accessCondition> 
 
