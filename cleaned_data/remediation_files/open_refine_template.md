@@ -28,7 +28,7 @@
 <originInfo>
 
 {{if(isBlank(cells["humanReadableDate"].value),'','<dateCreated>' + cells['humanReadableDate'].value + '</dateCreated>')}}{{if(isBlank(cells["dateCreated_edtf"].value),'','<dateCreated encoding="edtf">' + cells['dateCreated_edtf'].value + '</dateCreated>')}}
-{{if(isBlank(cells['dateRange'].value), '', '<dateCreated qualifier="approximate">' + cells['dateRange'].value + '</dateCreated><dateCreated qualifier="approximate" encoding="edtf" point="start">' + cells['dateStart'].value + '</dateCreated><dateCreated qualifier="approximate" encoding="edtf" point="end">' + cells['dateEnd'].value + '</dateCreated>'
+{{if(isBlank(cells['dateRange'].value), '', '<dateCreated qualifier="approximate">' + cells['dateRange'].value + '</dateCreated><dateCreated qualifier="approximate" encoding="edtf" point="start">' + cells['dateStart'].value + '</dateCreated><dateCreated qualifier="approximate" encoding="edtf" point="end">' + cells['dateEnd'].value + '</dateCreated>')}}
 
 </originInfo>
 
@@ -62,7 +62,7 @@
 
 <typeOfResource>{{cells['typeOfResource'].value}}</typeOfResource>
 
-<relatedItem displayLabel="Project" type="host"><titleInfo><title>{{cells['relatedItem'].value}}</title></titleInfo></relatedItem>
+<relatedItem displayLabel="Project" type="host"><titleInfo><title>{{cells['project'].value}}</title></titleInfo></relatedItem>
 
 {{if(isBlank(cells['findingAid'].value), '', '<relatedItem displayLabel="Collection" type="host"><titleInfo><title>' + cells['findingAid'].value + '</title></titleInfo><identifier>' + cells['MS_identifier'].value + '</identifier></relatedItem>')}}
 
