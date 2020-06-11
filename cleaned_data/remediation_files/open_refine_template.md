@@ -25,7 +25,12 @@
 
 {{if(isBlank(cells['name.2'].value), '', '<name'+ '><namePart>' + cells['name.2'].value + '</namePart>' + if(isBlank(cells['role.2'].value), '', '<role><roleTerm authority="marcrelator" valueURI="' + cells['role.2_URI'].value + '">' + cells['role.2'].value + '</roleTerm></role>') + '</name>')}}
 
-<originInfo>{{if(isBlank(cells["humanReadableDate"].value),'','<dateCreated>' + cells['humanReadableDate'].value + '</dateCreated>')}}{{if(isBlank(cells["dateCreated_edtf"].value),'','<dateCreated encoding="edtf">' + cells['dateCreated_edtf'].value + '</dateCreated>')}}</originInfo>
+<originInfo>
+
+{{if(isBlank(cells["humanReadableDate"].value),'','<dateCreated>' + cells['humanReadableDate'].value + '</dateCreated>')}}{{if(isBlank(cells["dateCreated_edtf"].value),'','<dateCreated encoding="edtf">' + cells['dateCreated_edtf'].value + '</dateCreated>')}}
+{{if(isBlank(cells['dateRange'].value), '', '<dateCreated qualifier="approximate">' + cells['dateRange'].value + '</dateCreated><dateCreated qualifier="approximate" encoding="edtf" point="start">' + cells['dateStart'].value + '</dateCreated><dateCreated qualifier="approximate" encoding="edtf" point="end">' + cells['dateEnd'].value + '</dateCreated>'
+
+</originInfo>
 
 <language><languageTerm authority="iso639-2b" type="text">English</languageTerm></language>
 

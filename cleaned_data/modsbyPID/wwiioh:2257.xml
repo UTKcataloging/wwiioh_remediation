@@ -8,7 +8,7 @@
    <titleInfo>
       <title>Murphy, Charles E.: WWII Oral History  - Part 5</title>
    </titleInfo>
-   <abstract>Interview with Charles E. Murphy</abstract>
+   <abstract>Interview with Charles E. Murphy on Thursday, March 2nd.</abstract>
    <name>
       <namePart>Murphy, Charles E.</namePart>
       <role>
@@ -17,8 +17,9 @@
       </role>
    </name>
    <originInfo>
-      <dateCreated>undated</dateCreated>
-      <dateCreated encoding="edtf">undated</dateCreated>
+      <dateCreated qualifier="approximate">1986-2010</dateCreated>
+      <dateCreated qualifier="approximate" encoding="edtf" point="start">1986</dateCreated>
+      <dateCreated qualifier="approximate" encoding="edtf" point="end">2010</dateCreated>
    </originInfo>
    <language>
       <languageTerm authority="iso639-2b" type="text">English</languageTerm>

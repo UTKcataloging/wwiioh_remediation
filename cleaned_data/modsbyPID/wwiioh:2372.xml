@@ -8,7 +8,7 @@
    <titleInfo>
       <title>Tureen, Gerald J.: WWII Oral History</title>
    </titleInfo>
-   <abstract>Interview with Gerald J. Tureen</abstract>
+   <abstract>Interview with Gerald J. Tureen.</abstract>
    <name>
       <namePart>Tureen, Gerald J.</namePart>
       <role>
@@ -17,8 +17,9 @@
       </role>
    </name>
    <originInfo>
-      <dateCreated>undated</dateCreated>
-      <dateCreated encoding="edtf">undated</dateCreated>
+      <dateCreated qualifier="approximate">1986-2010</dateCreated>
+      <dateCreated qualifier="approximate" encoding="edtf" point="start">1986</dateCreated>
+      <dateCreated qualifier="approximate" encoding="edtf" point="end">2010</dateCreated>
    </originInfo>
    <language>
       <languageTerm authority="iso639-2b" type="text">English</languageTerm>
