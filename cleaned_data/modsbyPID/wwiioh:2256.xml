@@ -18,6 +18,9 @@
    </name>
    <name>
       <namePart>Tinsley, Stanley</namePart>
+      <role>
+         <roleTerm authority="marcrelator" valueURI="http://id.loc.gov/vocabulary/relators/ivr">Interviewer</roleTerm>
+      </role>
    </name>
    <originInfo>
       <dateCreated>Sep 5, 1990</dateCreated>
