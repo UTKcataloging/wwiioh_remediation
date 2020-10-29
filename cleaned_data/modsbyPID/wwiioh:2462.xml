@@ -18,6 +18,10 @@
    </name>
    <name>
       <namePart>Johnson, Charles</namePart>
+      <role>
+         <roleTerm authority="marcrelator"
+            valueURI="http://id.loc.gov/vocabulary/relators/ivr">Interviewer</roleTerm>
+      </role>
    </name>
    <originInfo>
       <dateCreated>Aug 8, 1987</dateCreated>
